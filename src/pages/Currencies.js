@@ -11,13 +11,14 @@ const Currencies = (props) => {
     { name: "Ripple", symbol: "XRP" },
     { name: "Zcash", symbol: "ZEC" },
   ];
+
   return (
     <div className="currencies">
       {currencies.map((coin) => {
         const { name, symbol } = coin;
 
         return (
-          <Link to={`prices/${symbol}`}>
+          <Link to={`price/${symbol}`} key={coin.symbol}>
             <h2>{name}</h2>
           </Link>
         );
