@@ -15,7 +15,6 @@ const Price = (props) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setCoin(data);
     } catch (err) {
       console.error(err);

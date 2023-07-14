@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/currencies" element={<Currencies />} />
-        <Route path="/price/:symbol" element={<Price />} />
+        <Route path="currencies/price/:symbol" element={<Price />} />
       </Routes>
     </div>
   );
